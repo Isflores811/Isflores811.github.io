@@ -1352,6 +1352,16 @@ footer .nav-list {
     margin-left: -7px;
   }
 
+   #opener header {
+    font-size: 10vw;
+    text-align: center;
+    color: white;
+  }
+
+  #opener .header-line {
+    width: 60%;
+  }
+
   #opener p {
     width: 85%;
     font-size: 4vw;
