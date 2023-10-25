@@ -685,8 +685,9 @@ footer .nav-list {
   }
 
   #opener header {
+    font-size: 10vw;
     bottom: 20px;
-    width: 50%;
+    width: 70%;
   }
 
   #opener .ai-photo {
