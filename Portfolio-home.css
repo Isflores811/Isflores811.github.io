@@ -939,120 +939,6 @@ footer .nav-list {
     margin-left: -20px;
   }
 
-  .opening-wrapper {
-    margin-top: 6%;
-  }
-
-  #opener h2 {
-    line-height: 0px;
-    padding: 8px;
-  }
-
-  #about-me p {
-    margin: 20px auto;
-    font-size: 16px;
-  }
-
-  .iceland-portrait {
-    width: 90%;
-  }
-
-  .portrait-head {
-    margin-right: 75px;
-    margin-bottom: -9px;
-  }
-
-  #web-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  #web-links a {
-    display: block;
-    margin: auto;
-  }
-
-  .web-design-link {
-    display: block;
-    margin: auto;
-    width: 90%;
-
-    transition: 0.5s ease-in-out;
-  }
-
-  .web-design-link:hover {
-    width: 90%;
-    transform: none;
-  }
-
-  .film-link {
-    display: block;
-    margin: 10px auto;
-    width: 90%;
-    transition: 0.5s ease-in-out;
-  }
-
-  .film-link:hover {
-    width: 90%;
-    transform: none;
-  }
-
-  .photography-link {
-    display: block;
-    margin: auto;
-    width: 90%;
-    transition: 0.5s ease-in-out;
-  }
-
-  .photography-link:hover {
-    width: 90%;
-    transform: none;
-  }
-
-  #contact .box {
-    height: 900px;
-  }
-
-  .user-info h4 {
-    font-size: 6vw;
-  }
-
-  .contact-info h4 {
-    font-size: 6vw;
-  }
-
-  .contact-info p {
-    font-size: 3vw;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .portrait-head {
-    margin-right: 80px;
-    margin-bottom: -9px;
-  }
-
-  .portrait-legs {
-    width: 100%;
-    margin-right: 85px;
-  }
-
-  #contact .box {
-    height: 890px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  nav .icon {
-    width: 20px;
-  }
-
-  .dropdown {
-    margin-top: 40px;
-    margin-left: -25px;
-  }
-
   #opener .background-img {
     position: absolute;
     right: 0%;
@@ -1220,6 +1106,110 @@ footer .nav-list {
       font-size: 3vw;
       background-color: rgba(0, 0, 0, 0);
     }
+  }
+  #about-me p {
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .iceland-portrait {
+    width: 90%;
+  }
+
+  .portrait-head {
+    margin-right: 75px;
+    margin-bottom: -9px;
+  }
+
+  #web-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #web-links a {
+    display: block;
+    margin: auto;
+  }
+
+  .web-design-link {
+    display: block;
+    margin: auto;
+    width: 90%;
+
+    transition: 0.5s ease-in-out;
+  }
+
+  .web-design-link:hover {
+    width: 90%;
+    transform: none;
+  }
+
+  .film-link {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .film-link:hover {
+    width: 90%;
+    transform: none;
+  }
+
+  .photography-link {
+    display: block;
+    margin: auto;
+    width: 90%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .photography-link:hover {
+    width: 90%;
+    transform: none;
+  }
+
+  #contact .box {
+    height: 900px;
+  }
+
+  .user-info h4 {
+    font-size: 6vw;
+  }
+
+  .contact-info h4 {
+    font-size: 6vw;
+  }
+
+  .contact-info p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portrait-head {
+    margin-right: 80px;
+    margin-bottom: -9px;
+  }
+
+  .portrait-legs {
+    width: 100%;
+    margin-right: 85px;
+  }
+
+  #contact .box {
+    height: 890px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: -25px;
   }
 
   footer .icon {
