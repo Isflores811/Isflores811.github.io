@@ -217,6 +217,20 @@ footer .nav-list {
     width: 90%;
   }
 
+   .dog-computer {
+  position: relative;
+  display: block;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.work-in-progress {
+  position: absolute;
+  top: 1%;
+  left: 15%;
+  width: 40%;
+}
+
   footer .nav-list {
     font-size: 24px;
   }
@@ -324,6 +338,20 @@ footer .nav-list {
 
   .dog-computer {
     width: 100%;
+  }
+
+   .dog-computer {
+  position: relative;
+  display: block;
+  width: 70%;
+  margin: 40px auto;
+  }
+
+.work-in-progress {
+  position: absolute;
+  top: 1%;
+  left: 15%;
+  width: 40%;
   }
 }
 
