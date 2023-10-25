@@ -275,6 +275,14 @@ footer .nav-list {
     height: 15px;
   }
 
+   header {
+    font-size: 10vw;
+  }
+
+  .header-line {
+    width: 60%;
+  }
+
   .dog-computer {
     margin: 30px auto;
   }
