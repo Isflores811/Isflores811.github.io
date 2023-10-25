@@ -1,0 +1,1515 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Architects+Daughter&family=Archivo+Black&family=Fjalla+One&family=Koulen&family=Lalezar&family=Oswald:wght@300&display=swap");
+
+html {
+  max-width: 1500px;
+}
+
+/*Navbar icon*/
+#nav-section {
+  position: fixed;
+  right: 2%;
+  width: 16%;
+  height: 50vh;
+  z-index: 30;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  width: 0;
+}
+
+nav .icon {
+  position: absolute;
+  width: 40px;
+  margin-top: 20px;
+  right: 5%;
+  background-color: rgb(247, 108, 108);
+  border-radius: 10px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 80%;
+}
+
+.dropdown:hover {
+  width: 81%;
+}
+
+.option {
+  width: 100%;
+  height: 20px;
+  font-size: 1.3vw;
+  font-family: "Archivo Black", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: rgb(134, 255, 235);
+}
+
+.option:hover {
+  font-size: 1.5vw;
+  width: 105%;
+  height: 25px;
+  background-color: rgb(180, 229, 255);
+}
+
+.option:nth-of-type(1):hover {
+  background-color: rgb(36, 229, 74);
+}
+
+.option:nth-of-type(2):hover {
+  background-color: orange;
+}
+
+.option:nth-of-type(3):hover {
+  background-color: rgb(246, 134, 246);
+}
+
+.option:nth-of-type(4):hover {
+  background-color: rgb(253, 119, 115);
+}
+
+.option:nth-of-type(5):hover {
+  background-color: rgb(0, 162, 249);
+}
+
+.navbar .dropdown {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.navbar:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+/* */
+
+body {
+  background-color: black;
+}
+
+#opener {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 300px;
+}
+
+#opener p {
+  color: white;
+  text-align: center;
+  width: 80%;
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 50px auto;
+}
+
+#opener header {
+  font-size: 7vw;
+  text-align: center;
+  color: white;
+}
+
+#opener .header-line {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 40%;
+}
+
+.base-line {
+  position: absolute;
+  bottom: 25%;
+  width: 100vw;
+  height: 1%;
+}
+
+.left-line {
+  position: absolute;
+  right: 5%;
+  bottom: 2%;
+  width: 350px;
+}
+
+.right-line {
+  position: absolute;
+  left: 5%;
+  bottom: 2%;
+  width: 350px;
+}
+
+#gallery {
+  position: relative;
+}
+
+.pictures {
+  height: 3500px;
+  position: relative;
+}
+
+.pic1 {
+  position: absolute;
+  left: 3%;
+  top: 0%;
+  width: 56%;
+  height: 14.2%;
+  overflow: hidden;
+}
+
+.pic1 .rocky-mountains {
+  width: 100%;
+  height: 200%;
+  margin-top: -350px;
+}
+
+.pic1 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  z-index: 2;
+  right: -40%;
+  bottom: 0%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic1 .photo-info:hover {
+  right: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic1 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pic2 {
+  position: absolute;
+  right: 3%;
+  background-color: blue;
+  width: 37%;
+  height: 14.2%;
+  top: 0%;
+  overflow: hidden;
+}
+
+.pic2 .norway-waterfall {
+  height: 120%;
+  width: 118%;
+}
+
+.pic2 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  z-index: 2;
+  right: 0%;
+  bottom: -15%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic2 .photo-info:hover {
+  bottom: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic2 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pic3 {
+  position: absolute;
+  left: 3%;
+  background-color: red;
+  width: 30%;
+  height: 22%;
+  top: 14.6%;
+  overflow: hidden;
+}
+
+.messi {
+  width: 121%;
+  height: 110%;
+  margin-top: -50px;
+}
+
+.pic4 {
+  position: absolute;
+  left: 34%;
+  background-color: rgb(132, 231, 155);
+  width: 34%;
+  height: 9.8%;
+  top: 14.6%;
+  overflow: hidden;
+}
+
+.pic4 .culebra-sunrise {
+  width: 100%;
+  height: 150%;
+  margin-top: -70px;
+}
+
+.pic4 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: 0%;
+  bottom: -22%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic4 .photo-info:hover {
+  bottom: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic4 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pic5 {
+  position: absolute;
+  left: 69%;
+  background-color: rgb(142, 132, 231);
+  width: 28%;
+  height: 9.8%;
+  top: 14.6%;
+  overflow: hidden;
+}
+
+.pic5 .oregon-coast {
+  width: 100%;
+  height: 160%;
+}
+
+.pic5 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: -60%;
+  bottom: 0%;
+  padding-left: 1000px;
+  padding-top: 10000px;
+  transition: 1s ease-in-out;
+}
+
+.pic5 .photo-info:hover {
+  right: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic5 h1 {
+  font-size: 1.7vw;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pic6 {
+  position: absolute;
+  right: 3%;
+  background-color: rgb(234, 30, 210);
+  width: 63%;
+  height: 11.8%;
+  top: 24.8%;
+  overflow: hidden;
+}
+
+.digital-design {
+  width: 100%;
+  height: 107%;
+}
+
+.pic7 {
+  position: absolute;
+  left: 3%;
+  background-color: rgb(0, 255, 55);
+  width: 40%;
+  height: 13%;
+  top: 37%;
+  overflow: hidden;
+}
+
+.pic7 .auschwitz {
+  width: 100%;
+  height: 180%;
+  margin-top: -250px;
+}
+
+.pic7 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: -60%;
+  bottom: 0%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic7 .photo-info:hover {
+  right: -10%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic7 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pic8 {
+  position: absolute;
+  left: 44%;
+  background-color: rgb(0, 162, 255);
+  width: 25%;
+  height: 13%;
+  top: 37%;
+  overflow: hidden;
+}
+
+.pic8 .glacier-np {
+  width: 100%;
+  height: 140%;
+}
+
+.pic8 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: 7%;
+  bottom: -40%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic8 .photo-info:hover {
+  bottom: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic8 h1 {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pic9 {
+  position: absolute;
+  right: 3%;
+  background-color: rgb(255, 217, 0);
+  width: 27%;
+  height: 13%;
+  top: 37%;
+  overflow: hidden;
+}
+
+.pic9 .martin-sunset {
+  width: 100%;
+  height: 100%;
+}
+
+.pic9 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: 0%;
+  bottom: -20%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic9 .photo-info:hover {
+  bottom: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic9 h1 {
+  font-size: 1.7vw;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pic10 {
+  position: absolute;
+  left: 3%;
+  background-color: rgb(134, 66, 49);
+  width: 66%;
+  height: 11%;
+  top: 50.4%;
+  overflow: hidden;
+}
+
+.pic10 .oregon-cliff {
+  width: 100%;
+  height: 270%;
+  margin-top: -400px;
+}
+
+.pic10 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: 0%;
+  bottom: -20%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic10 .photo-info:hover {
+  bottom: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic10 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pic11 {
+  position: absolute;
+  right: 3%;
+  background-color: rgb(255, 0, 221);
+  width: 27%;
+  height: 20.3%;
+  top: 50.4%;
+  overflow: hidden;
+}
+
+.pic11 .iceland-photoshop {
+  position: absolute;
+  right: 0%;
+  width: 140%;
+  height: 100%;
+}
+
+.pic11 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: 5%;
+  bottom: -30%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic11 .photo-info:hover {
+  bottom: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic11 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pic12 {
+  position: absolute;
+  left: 3%;
+  background-color: rgb(49, 134, 120);
+  width: 66%;
+  height: 8.9%;
+  top: 61.8%;
+  overflow: hidden;
+}
+
+.pic12 .oregon-gorge {
+  width: 100%;
+  height: 400%;
+  margin-top: -550px;
+}
+
+.pic12 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: -50%;
+  bottom: 0%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic12 .photo-info:hover {
+  right: -10%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic12 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pic13 {
+  position: absolute;
+  left: 3%;
+  background-color: rgb(49, 63, 134);
+  width: 30%;
+  height: 14%;
+  top: 71.1%;
+  overflow: hidden;
+}
+
+.pic13 .montenegro {
+  width: 100%;
+  height: 120%;
+  margin-top: -50px;
+}
+
+.pic13 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  z-index: 2;
+  right: -80%;
+  bottom: 0%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic13 .photo-info:hover {
+  right: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic13 h1 {
+  font-size: 1.7vw;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pic14 {
+  position: absolute;
+  left: 34%;
+  background-color: rgb(176, 223, 73);
+  width: 20%;
+  height: 14%;
+  top: 71.1%;
+  overflow: hidden;
+}
+
+.pic14 .iceland-shore {
+  width: 145%;
+  height: 120%;
+}
+
+.pic14 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  z-index: 2;
+  right: -5%;
+  bottom: -15%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic14 .photo-info:hover {
+  bottom: 0%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic14 h1 {
+  font-size: 1.7vw;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pic15 {
+  position: absolute;
+  left: 55%;
+  background-color: rgb(223, 178, 73);
+  width: 42%;
+  height: 14%;
+  top: 71.1%;
+  overflow: hidden;
+}
+
+.pic15 .plitvice-lake {
+  width: 100%;
+  height: 150%;
+  margin-top: -150px;
+}
+
+.pic15 .photo-info {
+  position: absolute;
+  background-color: rgba(109, 105, 105, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  z-index: 2;
+  right: -70%;
+  bottom: 0%;
+  padding-left: 1000px;
+  padding-top: 1000px;
+  transition: 1s ease-in-out;
+}
+
+.pic15 .photo-info:hover {
+  right: 10%;
+  background-color: rgba(109, 105, 105, 0);
+}
+
+.pic15 h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#gallery .quote {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  color: rgb(179, 244, 245);
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  width: 80%;
+  bottom: 6%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#additional-photos {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+#additional-photos button {
+  position: absolute;
+
+  width: 20%;
+  z-index: 1;
+  margin: auto;
+  bottom: 50%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background-color: rgb(243, 44, 44);
+  font-size: 20px;
+  font-family: "Koulen", cursive;
+  letter-spacing: 5px;
+  padding-bottom: 40px;
+  color: wheat;
+  border-radius: 10px;
+}
+
+.iceland-plane {
+  position: absolute;
+  width: 100%;
+  height: 400%;
+  margin-top: -700px;
+  filter: blur(0px);
+}
+
+footer {
+  position: relative;
+  background-color: #ffbd59;
+  overflow: hidden;
+  height: 250px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .media-icons {
+  margin: auto;
+  text-align: center;
+}
+
+footer .icon {
+  width: 60px;
+  margin: auto 30px;
+}
+
+footer li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+footer .nav-list {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .icon {
+    width: 35px;
+    border-radius: 5px;
+  }
+
+  .dropdown {
+    margin-top: 55px;
+    margin-left: 0px;
+  }
+
+  .option {
+    width: 100%;
+    height: 20px;
+    font-size: 1.5vw;
+    padding: 7px;
+  }
+
+  .option:hover {
+    font-size: 1.6vw;
+    width: 105%;
+    height: 25px;
+    background-color: rgb(180, 229, 255);
+  }
+
+  .pictures {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .pic1 {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+
+  .pic1 .rocky-mountains {
+    position: relative;
+    width: 100%;
+    margin-top: -200px;
+  }
+
+  .pic1 .photo-info {
+    width: 50%;
+    right: -50%;
+    border: 2px solid black;
+  }
+
+  .pic1 .photo-info:hover {
+    right: 0%;
+  }
+
+  .pic1 h1 {
+    font-size: 2.5vw;
+    margin-bottom: 50px;
+  }
+
+  .pic2 {
+    position: relative;
+    right: 0%;
+    width: 100%;
+    background-color: black;
+  }
+
+  .pic2 .photo-info {
+    width: 30%;
+
+    bottom: -15%;
+  }
+
+  .pic2 h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+  .pic3 {
+    position: relative;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .messi {
+    width: 116%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .pic4 {
+    position: relative;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .pic4 .culebra-sunrise {
+    width: 130%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .pic4 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic5 {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    background-color: black;
+  }
+
+  .pic5 .oregon-coast {
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  .pic5 .photo-info {
+    width: 40%;
+    right: -60%;
+  }
+
+  .pic5 .photo-info:hover {
+    right: -5%;
+  }
+
+  .pic5 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic6 {
+    position: relative;
+    right: 0%;
+    width: 100%;
+    background-color: black;
+  }
+
+  .pic7 {
+    position: relative;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .pic7 .auschwitz {
+    position: relative;
+    width: 120%;
+    margin-top: 0px;
+    right: 15%;
+  }
+
+  .pic7 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic7 .photo-info {
+    width: 90%;
+    z-index: 2;
+    right: -60%;
+    bottom: 0%;
+  }
+
+  .pic7 .photo-info:hover {
+    right: -20%;
+  }
+
+  .pic8 {
+    position: relative;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .pic8 .glacier-np {
+    position: relative;
+    width: 120%;
+    right: 20%;
+  }
+
+  .pic8 .photo-info {
+    width: 70%;
+    right: 0%;
+  }
+
+  .pic8 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic9 {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    background-color: black;
+  }
+
+  .pic9 .martin-sunset {
+    width: 100%;
+    height: 200%;
+    margin-top: -150px;
+  }
+
+  .pic9 .photo-info {
+    width: 30%;
+    right: 0%;
+  }
+
+  .pic9 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic10 {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    background-color: black;
+  }
+
+  .pic10 .oregon-cliff {
+    width: 100%;
+    height: 20%;
+    margin-top: -200px;
+  }
+
+  .pic10 .photo-info {
+    right: -5%;
+  }
+
+  .pic10 .photo-info:hover {
+    bottom: 2%;
+    background-color: rgba(109, 105, 105, 0);
+  }
+
+  .pic10 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic11 {
+    position: relative;
+    right: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .pic11 .iceland-photoshop {
+    position: relative;
+    right: 0%;
+    width: 100%;
+  }
+
+  .pic11 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic11 .photo-info {
+    right: -5%;
+    bottom: -30%;
+  }
+
+  .pic11 .photo-info:hover {
+    bottom: 2%;
+  }
+
+  .pic12 {
+    position: relative;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .pic12 .oregon-gorge {
+    margin-top: 0px;
+  }
+
+  .pic12 .photo-info {
+    width: 120%;
+    right: -91%;
+    bottom: 2%;
+  }
+
+  .pic12 .photo-info:hover {
+    right: -27%;
+  }
+
+  .pic12 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic13 {
+    position: relative;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .pic13 .montenegro {
+    width: 120%;
+    margin-top: 0px;
+  }
+
+  .pic13 .photo-info {
+    width: 100%;
+    right: -75%;
+    bottom: 3%;
+  }
+
+  .pic13 .photo-info:hover {
+    right: -15%;
+  }
+
+  .pic13 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic14 {
+    position: relative;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+  }
+
+  .pic14 .iceland-shore {
+    width: 126%;
+  }
+
+  .pic14 .photo-info {
+    width: 50%;
+    right: 0%;
+  }
+
+  .pic14 .photo-info:hover {
+    bottom: 2%;
+  }
+
+  .pic14 h1 {
+    font-size: 2.5vw;
+  }
+
+  .pic15 {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    margin-bottom: 200px;
+    background-color: black;
+  }
+
+  .pic15 .plitvice-lake {
+    position: relative;
+    width: 100%;
+
+    margin-top: -200px;
+  }
+
+  .pic15 .photo-info {
+    width: 50%;
+    right: -70%;
+    bottom: 1%;
+  }
+
+  .pic15 .photo-info:hover {
+    right: -5%;
+    background-color: rgba(109, 105, 105, 0);
+  }
+
+  .pic15 h1 {
+    font-size: 2.5vw;
+  }
+
+  #gallery .quote {
+    font-size: 25px;
+    width: 80%;
+    bottom: 0.7%;
+  }
+
+  footer .nav-list {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #opener p {
+    width: 90%;
+    font-size: 2.1vw;
+  }
+
+  .left-line {
+    bottom: 7%;
+    width: 300px;
+  }
+
+  .right-line {
+    bottom: 7%;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer .icon {
+    width: 50px;
+    margin: auto 10px;
+  }
+
+  footer li {
+    margin-right: 18px;
+  }
+
+  footer .nav-list {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav .icon {
+    width: 30px;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: -3px;
+  }
+
+  .option {
+    width: 110%;
+    height: 15px;
+    font-size: 1.5vw;
+    padding: 4px;
+  }
+
+  .option:hover {
+    font-size: 1.6vw;
+    width: 115%;
+    height: 20px;
+  }
+
+  #opener p {
+    width: 90%;
+    font-size: 2.6vw;
+    margin: 30px auto;
+  }
+
+  .base-line {
+    bottom: 23%;
+    width: 100vw;
+  }
+
+  .left-line {
+    right: 5%;
+    bottom: 7%;
+    width: 250px;
+  }
+
+  .right-line {
+    position: absolute;
+    left: 5%;
+    bottom: 7%;
+    width: 250px;
+  }
+
+  #additional-photos {
+    height: 300px;
+    padding-top: 120px;
+  }
+
+  #additional-photos button {
+    width: 30%;
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .option {
+    width: 115%;
+    height: 10px;
+    font-size: 1.5vw;
+    padding: 4px;
+  }
+
+  .option:hover {
+    font-size: 1.6vw;
+    width: 120%;
+    height: 15px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .icon {
+    width: 50px;
+    margin: auto 10px 20px;
+  }
+
+  footer li {
+    margin-right: 35px;
+  }
+
+  footer .nav-list {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav .icon {
+    width: 25px;
+  }
+
+  .dropdown {
+    margin-top: 45px;
+    margin-left: -7px;
+  }
+
+  #opener p {
+    width: 85%;
+    font-size: 4vw;
+    line-height: 22px;
+  }
+  .pic1 .photo-info {
+    right: 0%;
+  }
+
+  .pic2 .photo-info {
+    bottom: 0%;
+  }
+
+  .pic4 .photo-info {
+    bottom: 0%;
+  }
+
+  .pic5 .photo-info {
+    right: 0%;
+  }
+
+  .pic5 .oregon-coast {
+    margin-top: -50px;
+  }
+
+  .pic7 .photo-info {
+    right: 0%;
+  }
+
+  .pic8 .photo-info {
+    bottom: 0%;
+  }
+
+  .pic9 .photo-info {
+    bottom: 0%;
+  }
+
+  .pic9 .martin-sunset {
+    margin-top: -50px;
+  }
+
+  .pic10 .photo-info {
+    bottom: 3%;
+  }
+
+  .pic10 .photo-info:hover {
+    bottom: 3%;
+  }
+
+  .pic10 .oregon-cliff {
+    margin-top: -150px;
+  }
+
+  .pic11 .photo-info {
+    bottom: 3%;
+  }
+
+  .pic11 .photo-info:hover {
+    bottom: 3%;
+  }
+
+  .pic12 .photo-info {
+    right: -25%;
+    bottom: 3%;
+  }
+
+  .pic12 .photo-info:hover {
+    right: -25%;
+    bottom: 3%;
+  }
+
+  .pic13 .photo-info {
+    right: -10%;
+  }
+
+  .pic13 .photo-info:hover {
+    right: -10%;
+  }
+
+  .pic14 .photo-info {
+    right: 0%;
+    bottom: 3%;
+  }
+
+  .pic14 .photo-info:hover {
+    bottom: 3%;
+  }
+
+  .pic15 .photo-info {
+    right: -3%;
+  }
+
+  .pic15 .photo-info:hover {
+    right: -3%;
+  }
+
+  #additional-photos {
+    height: 200px;
+    padding-top: 170px;
+  }
+
+  #additional-photos button {
+    width: 30%;
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+
+  #gallery .quote {
+    font-size: 22px;
+    width: 80%;
+    bottom: 0.7%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: -10px;
+  }
+
+  .option {
+    height: 7px;
+    width: 120%;
+  }
+
+  .option:hover {
+    height: 10px;
+    width: 125%;
+  }
+
+  #opener p {
+    width: 100%;
+    font-size: 3.5vw;
+    line-height: 20px;
+  }
+
+  .pic1 .photo-info {
+    bottom: -5%;
+  }
+
+  #additional-photos {
+    width: 100%;
+    height: 10px;
+    padding-top: 300px;
+  }
+
+  #additional-photos button {
+    width: 30%;
+    font-size: 15px;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+  }
+
+  footer .icon {
+    width: 40px;
+  }
+}

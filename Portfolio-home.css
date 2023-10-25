@@ -1,0 +1,1253 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Architects+Daughter&family=Archivo+Black&family=Fjalla+One&family=Koulen&family=Lalezar&family=Oswald:wght@300&display=swap");
+
+html {
+  max-width: 1500px;
+}
+
+body {
+  background-color: black;
+}
+
+/*Navbar icon*/
+#nav-section {
+  position: fixed;
+  right: 2%;
+  width: 16%;
+  height: 50vh;
+  z-index: 30;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  width: 0;
+}
+
+nav .icon {
+  position: absolute;
+  width: 40px;
+  margin-top: 20px;
+  right: 5%;
+  background-color: rgb(247, 108, 108);
+  border-radius: 10px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 80%;
+}
+
+.dropdown:hover {
+  width: 81%;
+}
+
+.option {
+  width: 100%;
+  height: 20px;
+  font-size: 1.3vw;
+  font-family: "Archivo Black", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: rgb(134, 255, 235);
+}
+
+.option:hover {
+  font-size: 1.5vw;
+  width: 105%;
+  height: 25px;
+  background-color: rgb(180, 229, 255);
+}
+
+.option:nth-of-type(1):hover {
+  background-color: rgb(36, 229, 74);
+}
+
+.option:nth-of-type(2):hover {
+  background-color: orange;
+}
+
+.option:nth-of-type(3):hover {
+  background-color: rgb(246, 134, 246);
+}
+
+.option:nth-of-type(4):hover {
+  background-color: rgb(253, 119, 115);
+}
+
+.option:nth-of-type(5):hover {
+  background-color: rgb(0, 162, 249);
+}
+
+.navbar .dropdown {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.navbar:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+/* */
+
+/* */
+
+#opener {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+}
+
+.opening-wrapper {
+  position: relative;
+  width: 40%;
+  text-align: center;
+  margin-left: 9%;
+  z-index: 2;
+  margin-top: 2%;
+}
+
+#opener header {
+  width: 100%;
+  font-size: 7vw;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Lalezar", cursive;
+  margin-bottom: 0px;
+}
+
+#opener h1 {
+  font-size: 4vw;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Lalezar", cursive;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-style: italic;
+}
+
+#opener h2 {
+  font-size: 2vw;
+  line-height: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 14px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Koulen", cursive;
+}
+
+#opener .examples {
+  display: inline-block;
+}
+
+h2:nth-of-type(1) {
+  animation-name: h2animation1;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes h2animation1 {
+  0% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  7% {
+    font-size: 3vw;
+    background-color: rgb(72, 235, 72);
+  }
+  14% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+h2:nth-of-type(2) {
+  animation-name: h2animation2;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes h2animation2 {
+  14% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  21% {
+    font-size: 3vw;
+    background-color: bisque;
+  }
+  28% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+h2:nth-of-type(3) {
+  animation-name: h2animation3;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes h2animation3 {
+  28% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  35% {
+    font-size: 3vw;
+    background-color: rgb(202, 79, 79);
+  }
+  42% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+h2:nth-of-type(4) {
+  animation-name: h2animation4;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes h2animation4 {
+  42% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  49% {
+    font-size: 3vw;
+    background-color: rgb(34, 194, 242);
+  }
+  56% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+h2:nth-of-type(5) {
+  animation-name: h2animation5;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h2animation5 {
+  56% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  63% {
+    font-size: 3vw;
+    background-color: rgb(235, 115, 246);
+  }
+  70% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+h2:nth-of-type(6) {
+  animation-name: h2animation6;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h2animation6 {
+  70% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  77% {
+    font-size: 3vw;
+    background-color: rgb(251, 220, 66);
+  }
+  84% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+h2:nth-of-type(7) {
+  animation-name: h2animation7;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h2animation7 {
+  84% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  91% {
+    font-size: 3vw;
+    background-color: rgb(111, 63, 222);
+  }
+  100% {
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+#opener .background-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.portrait {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 35%;
+  padding-left: 10px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.portrait-head {
+  width: 100%;
+  margin-right: 21px;
+  margin-bottom: -18px;
+  animation-name: head;
+  animation-duration: 5s;
+  opacity: 1;
+}
+
+@keyframes head {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.portrait-body {
+  width: 100%;
+  margin-right: 100px;
+  margin-bottom: -20px;
+  animation-name: body;
+  animation-duration: 5s;
+  opacity: 1;
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+}
+
+.portrait-legs {
+  width: 100%;
+  margin-right: 70px;
+  animation-name: legs;
+  animation-duration: 5s;
+  opacity: 1;
+}
+
+@keyframes legs {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* */
+
+/* */
+
+#about-me {
+  overflow: hidden;
+  display: flex;
+}
+
+.iceland-portrait {
+  width: 100%;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#about-me .introduction {
+  width: 50%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#about-me h3 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#about-me p {
+  margin: 20px auto;
+  font-size: 1.4vw;
+  width: 90%;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+}
+
+/* */
+
+#web-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#web-links a {
+  margin: 20px;
+}
+
+.web-design-link {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.web-design-link:hover {
+  width: 110%;
+  transform: translateY(-10px) translateX(-10px);
+}
+
+.film-link {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.film-link:hover {
+  width: 110%;
+  transform: translateY(-10px) translateX(-25px);
+}
+
+.photography-link {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.photography-link:hover {
+  width: 110%;
+  transform: translateY(-10px) translateX(-30px);
+}
+
+/* */ /* */ /* */
+
+#contact .box {
+  width: 90%;
+  height: 550px;
+  margin: 40px auto;
+  background-color: #0077b2;
+  border-radius: 10px;
+  padding-top: 50px;
+}
+
+#contact .flex {
+  display: flex;
+  color: white;
+}
+
+.user-info {
+  width: 40%;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.user-info h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.user-info h5 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.basic-info {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Mukta Malar", sans-serif;
+  border: 3px solid rgba(255, 0, 0, 0.415);
+  display: inline-block;
+  padding-left: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 105px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Mukta Malar", sans-serif;
+  border: 3px solid rgba(255, 0, 0, 0.415);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button {
+  font-size: 15px;
+  padding: 10px 50px 10px 50px;
+  margin-top: 2%;
+  background-color: rgb(252, 82, 82);
+  margin-right: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.contact-info {
+  color: white;
+  width: 50%;
+  margin: auto auto 50px auto;
+}
+
+.contact-info h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 30px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.my-information {
+  width: 100%;
+  margin-left: 10%;
+}
+
+.email,
+.phone,
+.location {
+  margin-top: 2%;
+}
+
+.contact-option {
+  display: flex;
+  font-size: 14px;
+}
+
+.logo {
+  width: 6%;
+  margin-right: 10px;
+}
+
+.social-media {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.contact-info .icon {
+  display: flex;
+  width: 7%;
+  margin-right: 20px;
+}
+
+footer {
+  position: relative;
+  background-color: #ffbd59;
+  overflow: hidden;
+  height: 250px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .media-icons {
+  margin: auto;
+  text-align: center;
+}
+
+footer .icon {
+  width: 60px;
+  margin: auto 30px;
+}
+
+footer li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+footer .nav-list {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .portrait-head {
+    margin-right: 30px;
+    margin-bottom: -18px;
+  }
+
+  #about-me .introduction {
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav .icon {
+    width: 35px;
+    border-radius: 5px;
+  }
+
+  .dropdown {
+    margin-top: 55px;
+    margin-left: 0px;
+  }
+
+  .option {
+    width: 100%;
+    height: 20px;
+    font-size: 1.5vw;
+    padding: 7px;
+  }
+
+  .option:hover {
+    font-size: 1.6vw;
+    width: 105%;
+    height: 25px;
+    background-color: rgb(180, 229, 255);
+  }
+
+  #opener h2 {
+  padding: 10px;
+
+}
+
+  #about-me {
+    flex-direction: column;
+  }
+
+  .iceland-portrait {
+    display: block;
+    width: 70%;
+    margin: 50px auto 0px auto;
+  }
+
+  #about-me .introduction {
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
+
+  #about-me h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  #about-me p {
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #opener header {
+    margin-bottom: 0px;
+  }
+
+  #opener h2 {
+    font-size: 2vw;
+    margin-top: 0px;
+    line-height: 1;
+  }
+
+  .portrait-head {
+    margin-right: 40px;
+    margin-bottom: -18px;
+  }
+
+  footer .nav-list {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portrait-head {
+    margin-right: 50px;
+    margin-bottom: -18px;
+  }
+
+  #web-links a {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #opener header {
+    font-size: 6vw;
+  }
+
+  #opener h1 {
+    font-size: 3vw;
+  }
+
+  .portrait-head {
+    margin-right: 60px;
+    margin-bottom: -18px;
+  }
+
+  #contact .box {
+    padding-top: 10px;
+    height: 1100px;
+  }
+
+  #contact .flex {
+    flex-direction: column;
+  }
+
+  .user-info {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .user-info h4 {
+    font-size: 5vw;
+  }
+
+  .user-info h5 {
+    font-size: 2.5vw;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .contact-info {
+    color: white;
+    width: 90%;
+    margin: 40px auto 50px auto;
+  }
+
+  .contact-info h4 {
+    font-size: 5vw;
+  }
+
+  .contact-info p {
+    margin: 20px auto;
+    font-size: 2.5vw;
+    width: 90%;
+  }
+
+  .my-information {
+    display: block;
+    width: 80%;
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+  .logo {
+    width: 8%;
+    margin-right: 10px;
+  }
+
+  .contact-info .icon {
+    display: flex;
+    width: 9%;
+    margin-right: 20px;
+  }
+
+  footer .icon {
+    width: 50px;
+    margin: auto 10px;
+  }
+
+  footer li {
+    margin-right: 18px;
+  }
+
+  footer .nav-list {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav .icon {
+    width: 30px;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: -3px;
+  }
+
+  .option {
+    width: 110%;
+    height: 15px;
+    font-size: 1.5vw;
+    padding: 4px;
+  }
+
+  .option:hover {
+    font-size: 1.6vw;
+    width: 115%;
+    height: 20px;
+  }
+
+  #opener h2 {
+  padding: 8px;
+  }
+
+  .portrait-head {
+    margin-right: 65px;
+    margin-bottom: -18px;
+  }
+
+  #about-me p {
+    margin: 10px auto;
+    line-height: 25px;
+  }
+
+  #web-links a {
+    margin: 5px;
+  }
+
+  #contact .box {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .portrait-head {
+    margin-right: 70px;
+    margin-bottom: -18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .option {
+    width: 130%;
+    height: 10px;
+    font-size: 1.5vw;
+    padding: 4px;
+  }
+
+  .option:hover {
+    font-size: 1.6vw;
+    width: 130%;
+    height: 10px;
+  }
+
+  .portrait-head {
+    margin-right: 70px;
+    margin-bottom: -9px;
+  }
+
+  .portrait-body {
+    margin-right: 100px;
+    margin-bottom: -10px;
+  }
+
+  .portrait-legs {
+    width: 100%;
+    margin-right: 80px;
+  }
+
+  .opening-wrapper {
+    margin-top: 3%;
+  }
+
+  #opener h1 {
+    font-size: 3vw;
+  }
+
+  #opener h2 {
+    line-height: 5px;
+  }
+
+  #contact .box {
+    height: 950px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .icon {
+    width: 50px;
+    margin: auto 10px 20px;
+  }
+
+  footer li {
+    margin-right: 35px;
+  }
+
+  footer .nav-list {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: -20px;
+  }
+
+  .opening-wrapper {
+    margin-top: 6%;
+  }
+
+  #opener h2 {
+    line-height: 0px;
+    padding: 8px;
+  }
+
+  #about-me p {
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .iceland-portrait {
+    width: 90%;
+  }
+
+  .portrait-head {
+    margin-right: 75px;
+    margin-bottom: -9px;
+  }
+
+  #web-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #web-links a {
+    display: block;
+    margin: auto;
+  }
+
+  .web-design-link {
+    display: block;
+    margin: auto;
+    width: 90%;
+
+    transition: 0.5s ease-in-out;
+  }
+
+  .web-design-link:hover {
+    width: 90%;
+    transform: none;
+  }
+
+  .film-link {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .film-link:hover {
+    width: 90%;
+    transform: none;
+  }
+
+  .photography-link {
+    display: block;
+    margin: auto;
+    width: 90%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .photography-link:hover {
+    width: 90%;
+    transform: none;
+  }
+
+  #contact .box {
+    height: 900px;
+  }
+
+  .user-info h4 {
+    font-size: 6vw;
+  }
+
+  .contact-info h4 {
+    font-size: 6vw;
+  }
+
+  .contact-info p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portrait-head {
+    margin-right: 80px;
+    margin-bottom: -9px;
+  }
+
+  .portrait-legs {
+    width: 100%;
+    margin-right: 85px;
+  }
+
+  #contact .box {
+    height: 890px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: -25px;
+  }
+
+  #opener .background-img {
+    position: absolute;
+    right: 0%;
+    width: 150%;
+    height: 500px;
+    opacity: 0.7;
+    
+  }
+
+
+  #opener header {
+    width: 100%;
+    font-size: 7vw;
+  }
+
+
+  .opening-wrapper {
+    width: 62%;
+    margin-left: 1%;
+    margin-top: 60px;
+  }
+
+  #opener h1 {
+    font-size: 4vw;
+  }
+    
+
+
+
+
+  .portrait {
+    padding-left: 10px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+
+  .portrait-head {
+    width: 160%;
+    margin-right: 83px;
+    margin-bottom: -5px;
+  }
+
+  .portrait-body {
+    width: 160%;
+    margin-right: 110px;
+    margin-bottom: -7px;
+  }
+
+  .portrait-legs {
+    width: 160%;
+    margin-right: 95px;margin-bottom: 50px;
+  }
+
+ 
+
+  
+  #opener h2 {
+    font-size: 3vw;
+    line-height: 10px;
+    padding: 7px;
+  }
+
+  @keyframes h2animation1 {
+    0% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    7% {
+      font-size: 3.5vw;
+      background-color: rgb(72, 235, 72);
+    }
+    14% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes h2animation2{
+    14% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    21% {
+      font-size: 3.5vw;
+      background-color: bisque;
+    }
+    28% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes h2animation3 {
+    28% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    35% {
+      font-size: 3.5vw;
+      background-color: rgb(202, 79, 79);
+    }
+    42% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes h2animation4 {
+    42% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    49% {
+      font-size: 3.5vw;
+      background-color: rgb(34, 194, 242);
+    }
+    56% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes h2animation5 {
+    56% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    63% {
+      font-size: 3.5vw;
+      background-color: rgb(235, 115, 246);
+    }
+    70% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes h2animation6 {
+    70% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    77% {
+      font-size: 3.5vw;
+      background-color: rgb(251, 220, 66);
+    }
+    85% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes h2animation7 {
+    85% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    91% {
+      font-size: 3.5vw;
+      background-color: rgb(111, 63, 222);
+    }
+    100% {
+      font-size: 3vw;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  footer .icon {
+    width: 40px;
+  }
+
+  #contact .box {
+    height: 850px;
+  }
+
+  .user-info h5 {
+    font-size: 3vw;
+  }
+
+  .basic-info {
+    font-size: 13px;
+  }
+
+  textarea {
+    font-size: 13px;
+  }
+
+  .contact-info p {
+    font-size: 3vw;
+  }
+
+  .contact-option {
+    display: flex;
+    font-size: 12px;
+  }
+}
