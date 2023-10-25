@@ -986,12 +986,13 @@ footer .nav-list {
   .portrait-body {
     width: 160%;
     margin-right: 110px;
-    margin-bottom: -7px;
+    margin-bottom: -9px;
   }
 
   .portrait-legs {
     width: 160%;
-    margin-right: 95px;margin-bottom: 50px;
+    margin-right: 95px;
+    margin-bottom: 50px;
   }
 
  
