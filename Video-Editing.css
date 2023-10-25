@@ -336,15 +336,25 @@ footer .nav-list {
     margin-left: -7px;
   }
 
-  .dog-computer {
+   .dog-computer {
     width: 100%;
+   
   }
 
-   .dog-computer {
-  position: relative;
-  display: block;
-  width: 70%;
-  margin: 40px auto;
+  .coding-sticker {
+    position: absolute;
+    left: 13%;
+    bottom: 28%;
+    width: 15%;
+    filter: blur(0.1px);
+  }
+  
+  .dog-head {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 12%;
+    filter: blur(0.1px);
   }
 
 .work-in-progress {
