@@ -1411,11 +1411,12 @@ footer .nav-list {
   }
   
   #opener header {
+    font-size: 9vw;
     padding-top: 40px;
   }
 
   #opener .header-line {
-    width: 45%;
+    width: 55%;
   }
 
   #opener p {
