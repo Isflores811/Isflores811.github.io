@@ -1257,6 +1257,10 @@ footer .nav-list {
 }
 
 @media screen and (max-width: 400px) {
+  .option {
+    font-size: 2.5vw;
+  }
+  
   footer .icon {
     width: 40px;
   }
