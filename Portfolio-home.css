@@ -971,8 +971,14 @@ footer .nav-list {
     padding-bottom: 0px;
     border: 1px solid black;
     background-color: rgb(178, 232, 255);
-    
   }
+
+  .option:nth-of-type(4) {
+    width: 90%;
+    padding-top: 7px;
+    height: 29px;
+  }
+
 
   .option:hover {
     font-size: 2.3vw;
