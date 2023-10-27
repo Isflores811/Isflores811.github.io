@@ -1257,15 +1257,6 @@ footer .nav-list {
 }
 
 @media screen and (max-width: 400px) {
-  nav .icon {
-    width: 20px;
-  }
-
-  .dropdown {
-    margin-top: 40px;
-    margin-left: -25px;
-  }
-
   footer .icon {
     width: 40px;
   }
