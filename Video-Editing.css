@@ -395,11 +395,12 @@ footer .nav-list {
   }
   
   header {
+    font-size: 9vw;
     padding-top: 40px;
   }
 
   .header-line {
-    width: 45%;
+    width: 55%;
   }
 
    .dog-computer {
