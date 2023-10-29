@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Architects+Daughter&family=Archivo+Black&family=Fjalla+One&family=Koulen&family=Lalezar&family=Oswald:wght@300&display=swap");
 
 html {
+  width: 100%;
   max-width: 1500px;
+ 
+}
+
+main {
+  position: relative;
 }
 
 body {
@@ -11,10 +17,11 @@ body {
 /*Navbar icon*/
 #nav-section {
   position: fixed;
-  right: 2%;
+  left: 0;
   width: 16%;
   height: 500px;
   z-index: 30;
+  
 }
 
 .navbar {
@@ -28,16 +35,17 @@ nav .icon {
   position: absolute;
   width: 40px;
   margin-top: 20px;
-  right: 5%;
+  left: 20%;
   background-color: rgb(247, 108, 108);
   border-radius: 10px;
+  
 }
 
 .dropdown {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-  margin-left: 10px;
+  margin-left: 30px;
   width: 80%;
 }
 
@@ -48,7 +56,7 @@ nav .icon {
 .option {
   width: 100%;
   height: 20px;
-  font-size: 1.3vw;
+  font-size: 1.3vmin;
   font-family: "Archivo Black", sans-serif;
   text-decoration: none;
   text-align: center;
@@ -62,7 +70,7 @@ nav .icon {
 }
 
 .option:hover {
-  font-size: 1.5vw;
+  font-size: 1.5vmin;
   width: 105%;
   height: 25px;
   background-color: rgb(180, 229, 255);
@@ -101,8 +109,7 @@ nav .icon {
 }
 /* */
 
-/* */
-
+/*Opening Section*/
 #opener {
   position: relative;
   background-color: black;
@@ -121,7 +128,7 @@ nav .icon {
 
 #opener header {
   width: 100%;
-  font-size: 7vw;
+  font-size: 7vmin;
   color: whitesmoke;
   text-align: center;
   font-family: "Lalezar", cursive;
@@ -129,7 +136,7 @@ nav .icon {
 }
 
 #opener h1 {
-  font-size: 4vw;
+  font-size: 4vmin;
   width: 100%;
   color: white;
   text-align: center;
@@ -140,7 +147,7 @@ nav .icon {
 }
 
 #opener h2 {
-  font-size: 2vw;
+  font-size: 2vmin;
   line-height: 10px;
   margin-top: 10px;
   border-radius: 5px;
@@ -376,7 +383,7 @@ h2:nth-of-type(7) {
 
 /* */
 
-/* */
+/*About Me*/
 
 #about-me {
   overflow: hidden;
@@ -408,13 +415,15 @@ h2:nth-of-type(7) {
 
 #about-me p {
   margin: 20px auto;
-  font-size: 1.4vw;
+  font-size: 1.4vmin;
   width: 90%;
   color: white;
   font-family: "Architects Daughter", cursive;
 }
 
 /* */
+
+/*Web Links to Web design, Film, Visual Gallery sections*/
 
 #web-links {
   display: flex;
@@ -456,7 +465,9 @@ h2:nth-of-type(7) {
   transform: translateY(-10px) translateX(-30px);
 }
 
-/* */ /* */ /* */
+/* */
+
+/*Contact Section*/
 
 #contact .box {
   width: 90%;
@@ -576,6 +587,10 @@ button {
   margin-right: 20px;
 }
 
+/* */
+
+/*Footer Section*/
+
 footer {
   position: relative;
   background-color: #ffbd59;
@@ -612,6 +627,39 @@ footer .nav-list {
   font-family: "Fjalla One", sans-serif;
 }
 
+/* */
+
+/*Media Queries*/
+
+@media screen and (max-width: 1501px) {
+  .option {
+    width: 100%;
+    font-size: 1.3vmin;
+  }
+  
+  .option:hover {
+    width: 100%;
+    font-size: 1.5vmin;
+  }
+  
+  #opener header {
+    font-size: 7vmin;
+  }
+  
+  #opener h1 {
+    font-size: 4vmin;
+  }
+  
+  #opener h2 {
+    font-size: 2vmin;
+  }
+
+  #about-me p {
+    font-size: 1.4vmin;
+  }
+
+}
+
 @media screen and (max-width: 1200px) {
   .portrait-head {
     margin-right: 30px;
@@ -636,7 +684,7 @@ footer .nav-list {
 
   .dropdown {
     margin-top: 55px;
-    margin-left: 0px;
+    margin-left: 30px;
   }
 
   .option {
@@ -813,7 +861,7 @@ footer .nav-list {
 
   .dropdown {
     margin-top: 50px;
-    margin-left: -3px;
+    margin-left: 25px;
   }
 
   .option {
@@ -871,6 +919,11 @@ footer .nav-list {
     font-size: 1.6vw;
     width: 130%;
     height: 10px;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 20px;
   }
 
   .portrait-head {
@@ -1300,3 +1353,5 @@ footer .nav-list {
     font-size: 12px;
   }
 }
+
+/* */
