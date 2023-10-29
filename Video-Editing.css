@@ -1,16 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Archivo+Black&family=Fjalla+One&family=Koulen&family=Lalezar&display=swap");
 
 html {
+  width: 100%;
   max-width: 1500px;
+ 
+}
+
+main {
+  position: relative;
+}
+
+body {
+  background-color: black;
 }
 
 /*Navbar icon*/
 #nav-section {
   position: fixed;
-  right: 2%;
+  left: 0;
   width: 16%;
   height: 500px;
   z-index: 30;
+  
 }
 
 .navbar {
@@ -24,16 +35,17 @@ nav .icon {
   position: absolute;
   width: 40px;
   margin-top: 20px;
-  right: 5%;
+  left: 20%;
   background-color: rgb(247, 108, 108);
   border-radius: 10px;
+  
 }
 
 .dropdown {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-  margin-left: 10px;
+  margin-left: 30px;
   width: 80%;
 }
 
@@ -44,7 +56,7 @@ nav .icon {
 .option {
   width: 100%;
   height: 20px;
-  font-size: 1.3vw;
+  font-size: 1.3vmin;
   font-family: "Archivo Black", sans-serif;
   text-decoration: none;
   text-align: center;
@@ -53,12 +65,12 @@ nav .icon {
   font-style: italic;
   font-weight: bold;
   padding: 10px;
-  border: 1px solid blue;
-  background-color: rgba(178, 232, 255, 0.955);
+  border: 2px solid blue;
+  background-color: rgb(134, 255, 235);
 }
 
 .option:hover {
-  font-size: 1.5vw;
+  font-size: 1.5vmin;
   width: 105%;
   height: 25px;
   background-color: rgb(180, 229, 255);
@@ -88,7 +100,7 @@ nav .icon {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 
 .navbar:hover .dropdown {
@@ -100,10 +112,12 @@ nav .icon {
 body {
   background-color: black;
 }
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
+/* */
 
+
+/*Opening header and image*/
 header {
-  font-size: 7vw;
+  font-size: 7vmin;
   text-align: center;
   color: white;
 }
@@ -150,8 +164,9 @@ header {
   width: 8%;
   filter: blur(0.3px);
 }
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
+/* */
 
+/*Footer Section*/
 footer {
   position: relative;
   background-color: #ffbd59;
@@ -187,6 +202,24 @@ footer .nav-list {
   line-height: 50px;
   font-family: "Fjalla One", sans-serif;
 }
+/* */
+
+/*Media Queries*/
+@media screen and (max-width: 1501px) {
+  .option {
+    width: 100%;
+    font-size: 1.3vmin;
+  }
+  
+  .option:hover {
+    width: 100%;
+    font-size: 1.5vmin;
+  }
+  
+  #opener header {
+    font-size: 7vmin;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   nav .icon {
@@ -196,7 +229,7 @@ footer .nav-list {
 
   .dropdown {
     margin-top: 55px;
-    margin-left: 0px;
+    margin-left: 30px;
   }
 
   .option {
@@ -217,7 +250,11 @@ footer .nav-list {
     width: 90%;
   }
 
-   .dog-computer {
+  footer .nav-list {
+    font-size: 24px;
+  }
+
+  .dog-computer {
   position: relative;
   display: block;
   width: 70%;
@@ -230,10 +267,6 @@ footer .nav-list {
   left: 15%;
   width: 40%;
 }
-
-  footer .nav-list {
-    font-size: 24px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -258,7 +291,7 @@ footer .nav-list {
 
   .dropdown {
     margin-top: 50px;
-    margin-left: -3px;
+    margin-left: 25px;
   }
 
   .option {
@@ -289,12 +322,9 @@ footer .nav-list {
     height: 15px;
   }
 
-   header {
-    font-size: 10vw;
-  }
-
-  .header-line {
-    width: 60%;
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 20px;
   }
 
   .dog-computer {
@@ -361,25 +391,19 @@ footer .nav-list {
 
   .option {
     width: 100%;
-    height: 25px;
+    height: 10px;
     font-size: 2.3vw;
     letter-spacing: 0px;
-    padding-top: 11px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid black;
     background-color: rgb(178, 232, 255);
-  }
-
-  .option:nth-of-type(4) {
-    width: 90%;
-    padding-top: 7px;
-    height: 29px;
   }
 
   .option:hover {
     font-size: 2.3vw;
     width: 100%;
-    height: 25px;
+    height: 10px;
     background-color: rgb(180, 229, 255);
   }
 
@@ -402,8 +426,9 @@ footer .nav-list {
   .header-line {
     width: 55%;
   }
+  
 
-   .dog-computer {
+  .dog-computer {
     width: 100%;
    
   }
@@ -413,7 +438,7 @@ footer .nav-list {
     left: 13%;
     bottom: 28%;
     width: 15%;
-    filter: blur(0.0px);
+    filter: blur(0.1px);
   }
   
   .dog-head {
@@ -421,23 +446,22 @@ footer .nav-list {
     top: 40%;
     left: 5%;
     width: 12%;
-    filter: blur(0.0px);
+    filter: blur(0.1px);
   }
+
+   
 
 .work-in-progress {
   position: absolute;
   top: 1%;
   left: 15%;
   width: 40%;
-  }
+}
 }
 
 @media screen and (max-width: 400px) {
-  .option {
-    font-size: 2.5vw;
-  }
-
   footer .icon {
     width: 40px;
   }
 }
+/* */
