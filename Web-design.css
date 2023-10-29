@@ -1,16 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Architects+Daughter&family=Archivo+Black&family=Fjalla+One&family=Koulen&family=Lalezar&family=Oswald:wght@300&display=swap");
 
 html {
+  width: 100%;
   max-width: 1500px;
+ 
+}
+
+main {
+  position: relative;
+}
+
+body {
+  background-color: black;
 }
 
 /*Navbar icon*/
 #nav-section {
   position: fixed;
-  right: 2%;
+  left: 0;
   width: 16%;
   height: 500px;
   z-index: 30;
+  
 }
 
 .navbar {
@@ -24,16 +35,17 @@ nav .icon {
   position: absolute;
   width: 40px;
   margin-top: 20px;
-  right: 5%;
+  left: 20%;
   background-color: rgb(247, 108, 108);
   border-radius: 10px;
+  
 }
 
 .dropdown {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-  margin-left: 10px;
+  margin-left: 30px;
   width: 80%;
 }
 
@@ -44,7 +56,7 @@ nav .icon {
 .option {
   width: 100%;
   height: 20px;
-  font-size: 1.3vw;
+  font-size: 1.3vmin;
   font-family: "Archivo Black", sans-serif;
   text-decoration: none;
   text-align: center;
@@ -58,7 +70,7 @@ nav .icon {
 }
 
 .option:hover {
-  font-size: 1.5vw;
+  font-size: 1.5vmin;
   width: 105%;
   height: 25px;
   background-color: rgb(180, 229, 255);
@@ -88,7 +100,7 @@ nav .icon {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 
 .navbar:hover .dropdown {
@@ -100,10 +112,9 @@ nav .icon {
 body {
   background-color: black;
 }
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
+/* */
 
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
-
+/*Opening Section*/
 #opener {
   width: 100%;
   overflow: hidden;
@@ -113,7 +124,7 @@ body {
   position: relative;
   display: block;
   bottom: 80px;
-  font-size: 7vw;
+  font-size: 7vmin;
   z-index: 2;
   background-color: black;
   color: white;
@@ -146,9 +157,9 @@ body {
   width: 95%;
   margin: auto;
 }
+/* */
 
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
-
+/*Opening Statement*/
 #page-info {
   position: relative;
 }
@@ -162,11 +173,9 @@ body {
   margin: 0px auto 100px auto;
   text-align: center;
 }
+/* */
 
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
-
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
-
+/*Links to Websites*/
 .website1 {
   position: relative;
   display: flex;
@@ -204,7 +213,7 @@ body {
 .website1 p {
   margin: 5px 15px;
   width: 95%;
-  font-size: 1.5vw;
+  font-size: 1.5vmin;
   line-height: 22px;
   font-family: "Oswald", sans-serif;
 }
@@ -254,7 +263,7 @@ body {
 .website2 p {
   margin: 5px 15px;
   width: 95%;
-  font-size: 1.5vw;
+  font-size: 1.5vmin;
   line-height: 22px;
   font-family: "Oswald", sans-serif;
 }
@@ -305,7 +314,7 @@ body {
 .website3 p {
   margin: 5px 15px;
   width: 95%;
-  font-size: 1.5vw;
+  font-size: 1.5vmin;
   line-height: 22px;
   font-family: "Oswald", sans-serif;
 }
@@ -319,9 +328,9 @@ body {
   background-color: #b95855;
   z-index: 0;
 }
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
+/* */
 
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
+/*Footer Section*/
 footer {
   position: relative;
   background-color: #ffbd59;
@@ -356,6 +365,36 @@ footer .nav-list {
   color: white;
   line-height: 50px;
   font-family: "Fjalla One", sans-serif;
+}
+/* */
+
+/*Media Queries*/
+@media screen and (max-width: 1501px) {
+  .option {
+    width: 100%;
+    font-size: 1.3vmin;
+  }
+  
+  .option:hover {
+    width: 100%;
+    font-size: 1.5vmin;
+  }
+  
+  #opener header {
+    font-size: 7vmin;
+  }
+
+  .website1 p {
+    font-size: 1.5vmin;
+  }
+
+  .website2 p {
+    font-size: 1.5vmin;
+  }
+
+  .website3 p {
+    font-size: 1.5vmin;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -394,7 +433,7 @@ footer .nav-list {
 
   .dropdown {
     margin-top: 55px;
-    margin-left: 0px;
+    margin-left: 30px;
   }
 
   .option {
@@ -556,7 +595,7 @@ footer .nav-list {
 
   .dropdown {
     margin-top: 50px;
-    margin-left: -3px;
+    margin-left: 25px;
   }
 
   .option {
@@ -649,6 +688,11 @@ footer .nav-list {
     height: 15px;
   }
 
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
   footer {
     height: auto;
   }
@@ -709,25 +753,20 @@ footer .nav-list {
 
   .option {
     width: 100%;
-    height: 25px;
+    height: 10px;
     font-size: 2.3vw;
     letter-spacing: 0px;
-    padding-top: 11px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid black;
     background-color: rgb(178, 232, 255);
-  }
-  
-  .option:nth-of-type(4) {
-    width: 90%;
-    padding-top: 7px;
-    height: 29px;
+    
   }
 
   .option:hover {
     font-size: 2.3vw;
     width: 100%;
-    height: 25px;
+    height: 10px;
     background-color: rgb(180, 229, 255);
   }
 
@@ -741,7 +780,7 @@ footer .nav-list {
     visibility: visible;
     opacity: 1;
   }
-
+  
   #opener header {
     font-size: 10vw;
     bottom: 20px;
@@ -761,6 +800,7 @@ footer .nav-list {
   .website1 .website-img-container {
     width: 95%;
   }
+  
 
   .website1 .website-img {
     right: 20%;
@@ -814,8 +854,23 @@ footer .nav-list {
 }
 
 @media screen and (max-width: 400px) {
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: -10px;
+  }
+
   .option {
-    font-size: 2.5vw;
+    height: 7px;
+    width: 120%;
+  }
+
+  .option:hover {
+    height: 10px;
+    width: 125%;
   }
 
   #opener .ai-photo {
@@ -823,11 +878,7 @@ footer .nav-list {
     margin-left: -170px;
     overflow: hidden;
   }
-
-  #opener header {
-    bottom: 10px;
-    width: 53%;
-  }
+  
 
   .website1 .website-img-container {
     width: 100%;
@@ -884,3 +935,4 @@ footer .nav-list {
     width: 40px;
   }
 }
+/* */
