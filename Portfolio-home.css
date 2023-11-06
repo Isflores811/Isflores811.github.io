@@ -583,8 +583,8 @@ button {
 }
 .contact-info .icon {
   display: flex;
-  width: 7%;
-  margin-right: 20px;
+  width: 30%;
+  margin-right: 0px;
 }
 
 /* */
@@ -832,7 +832,7 @@ footer .nav-list {
 
   .contact-info .icon {
     display: flex;
-    width: 9%;
+    width: 40%;
     margin-right: 20px;
   }
 
