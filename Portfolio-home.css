@@ -123,12 +123,12 @@ nav .icon {
   text-align: center;
   margin-left: 9%;
   z-index: 2;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 #opener header {
   width: 100%;
-  font-size: 7vmin;
+  font-size: 9vmin;
   color: whitesmoke;
   text-align: center;
   font-family: "Lalezar", cursive;
@@ -136,7 +136,7 @@ nav .icon {
 }
 
 #opener h1 {
-  font-size: 4vmin;
+  font-size: 6vmin;
   width: 100%;
   color: white;
   text-align: center;
@@ -642,14 +642,6 @@ footer .nav-list {
     font-size: 2.2vmin;
   }
   
-  #opener header {
-    font-size: 7vmin;
-  }
-  
-  #opener h1 {
-    font-size: 4vmin;
-  }
-  
   #opener h2 {
     font-size: 2vmin;
   }
@@ -733,9 +725,13 @@ footer .nav-list {
     font-size: 20px;
     line-height: 30px;
   }
-
+  
   #opener header {
-    margin-bottom: 0px;
+  font-size: 7vmin;
+  }
+
+  #opener h1 {
+  font-size: 5vmin;
   }
 
   #opener h2 {
