@@ -833,7 +833,7 @@ footer .nav-list {
   .contact-info .icon {
     display: flex;
     width: 40%;
-    margin-right: 20px;
+    margin-right: 0px;
   }
 
   footer .icon {
