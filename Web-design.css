@@ -124,7 +124,7 @@ body {
   position: relative;
   display: block;
   bottom: 80px;
-  font-size: 7vmin;
+  font-size: 7vw;
   z-index: 2;
   background-color: black;
   color: white;
@@ -379,21 +379,24 @@ footer .nav-list {
     width: 100%;
     font-size: 2.2vmin;
   }
-  
-  #opener header {
-    font-size: 7vmin;
-  }
+}
+
+@media screen and (min-width: 1501px) {
 
   .website1 p {
-    font-size: 1.5vmin;
+    font-size: 23px;
   }
 
   .website2 p {
-    font-size: 1.5vmin;
+    font-size: 23px;
   }
 
   .website3 p {
-    font-size: 1.5vmin;
+    font-size: 23px;
+  }
+
+  #opener header {
+    font-size: 100px;
   }
 }
 
