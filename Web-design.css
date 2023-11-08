@@ -213,7 +213,7 @@ body {
 .website1 p {
   margin: 5px 15px;
   width: 95%;
-  font-size: 1.5vmin;
+  font-size: 1.5vw;
   line-height: 22px;
   font-family: "Oswald", sans-serif;
 }
@@ -263,7 +263,7 @@ body {
 .website2 p {
   margin: 5px 15px;
   width: 95%;
-  font-size: 1.5vmin;
+  font-size: 1.5vw;
   line-height: 22px;
   font-family: "Oswald", sans-serif;
 }
@@ -314,7 +314,7 @@ body {
 .website3 p {
   margin: 5px 15px;
   width: 95%;
-  font-size: 1.5vmin;
+  font-size: 1.5vw;
   line-height: 22px;
   font-family: "Oswald", sans-serif;
 }
