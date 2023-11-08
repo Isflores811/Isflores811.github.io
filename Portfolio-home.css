@@ -415,7 +415,7 @@ h2:nth-of-type(7) {
 
 #about-me p {
   margin: 20px auto;
-  font-size: 1.4vmin;
+  font-size: 1.4vw;
   width: 90%;
   color: white;
   font-family: "Architects Daughter", cursive;
@@ -641,12 +641,15 @@ footer .nav-list {
     width: 100%;
     font-size: 2.2vmin;
   }
-  
-  #opener h2 {
-    font-size: 2vmin;
-  }
-
 }
+  
+ @media screen and (min-width: 1501px) {
+  #about-me p {
+    font-size: 20px;
+  }
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .portrait-head {
