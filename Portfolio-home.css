@@ -646,10 +646,6 @@ footer .nav-list {
     font-size: 2vmin;
   }
 
-  #about-me p {
-    font-size: 1.4vmin;
-  }
-
 }
 
 @media screen and (max-width: 1200px) {
